@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', Arial, sans-serif;
+    background: #000;
+}
+
+header {
+    background: #000;
+    margin: 0; /* Elimina el margen superior del encabezado */
+    padding: 0; /* Elimina el relleno del encabezado */
+}
+
+nav ul {
+    margin: 150px auto 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 600px;
+    text-align: center;
+}
+
+nav li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Estilos para el contenido "About" */
+#about-content {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    padding: 20px;
+}
+
+#title img {
+    display: inline-block; /* Hacer que la imagen sea un elemento en línea */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+    width: 300px; /* Tamaño de la imagen */
+    height: 200px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color */
+    filter: grayscale(100%); /* Mantén la imagen en blanco y negro */
+}
+
+nav ul {
+    list-style: none;
+    display: inline; /* Hacer que la lista de navegación sea un elemento en línea */
+    margin-top: 0; /* Elimina el margen superior de la lista de navegación */
+}
+
+nav li {
+    display: inline-block; /* Hacer que los elementos de la lista sean en línea y se puedan alinear horizontalmente */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+}
+
+/* Estilos para el contenido "Biografía" y "Contacto" */
+
+#contact-content {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; /* Alineación del texto a la izquierda */
+}
+
+
+#contact-content p {
+    margin-bottom: 10px; /* Espacio entre párrafos */
+}
+
+/* Estilos para los enlaces a LinkedIn y Twitter */
+#contact-content a {
+    font-family: 'TuTipoDeLetra', Arial, sans-serif; /* Establece el tipo de letra deseado */
+    font-size: x-large;
+    color: white; /* Color de enlace de LinkedIn */
+    text-decoration: none;
+}
+
+#contact-content a:hover {
+    color: white; /* Color de enlace de Twitter al pasar el cursor sobre él */
+}
+
+
+#title h1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto en un 10% al pasar el ratón */
+    transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el cambio de tamaño */
+}
+
+#title img:hover {
+    transform: scale(1.4); /* Aumenta el tamaño de la imagen en un 10% al pasar el ratón */
+    transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el cambio de tamaño */
+    background-color: green; /* Cambia el fondo a verde al pasar el ratón */
+}
+
+
+
+@media screen and (max-height: 300px) {
+    nav ul {
+        margin-top: 40px;
+    }
+}
+
+nav{
+
+display: flex;
+    
+}
