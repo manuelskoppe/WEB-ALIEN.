@@ -132,10 +132,71 @@ nav a {
     transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el cambio de tamaño */
 }
 
-#title img:hover {
-    transform: scale(1.4); /* Aumenta el tamaño de la imagen en un 10% al pasar el ratón */
-    transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el cambio de tamaño */
-    background-color: green; /* Cambia el fondo a verde al pasar el ratón */
+
+
+/* Estilos para el botón "Area 51" */
+#color-change-button {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'TuTipoDeLetra', Arial, sans-serif; /* Establece el tipo de letra deseado */
+    font-size: x-large;
+    position: relative; /* Agrega posición relativa para elementos secundarios */
+}
+
+
+
+/* Línea que aparecerá debajo del botón "Area 51" */
+#color-change-button::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Coloca la línea en el centro horizontal del botón */
+    bottom: -2px; /* Distancia de la línea con respecto al botón */
+    width: 0; /* Inicialmente, la línea no tiene ancho */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    transform: translateX(-50%); /* Centra horizontalmente la línea */
+    transition: width 0.3s ease;
+}
+
+#color-change-button:hover::after {
+    width: 100%; /* Al pasar el ratón, la línea se extiende hacia los lados */
+}
+
+/* Estilos iniciales para el botón "Area 51" (clase "default") */
+#color-change-button.default {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega transiciones para cambiar el color de fondo y texto */
+}
+
+/* Estilos cuando el botón está activo (clase "active") */
+#color-change-button.active {
+    background-color: green; /* Cambia el color de fondo cuando está activo */
+    color: #000; /* Cambia el color del texto cuando está activo */
+}
+
+
+/* css.css */
+
+.default {
+    background-color: #yourOriginalColor;  // Pon el color original del botón
+    /* ... (otros estilos que quieras) ... */
 }
 
 
